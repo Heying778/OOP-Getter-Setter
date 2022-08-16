@@ -26,10 +26,20 @@ public class Main {
         //setting a new r
 
 
-        //Account Examople
-//        Scanner scanner = new Scanner(System.in)
-//
-//                @
+        //Customer
+        Customer name = new Customer("Yingying", "He", 100);
+
+        System.out.println("FULL NAME: "+name.getFullName());
+        System.out.println("HELD MONEY: "+name.getHeldMoney());
+
+        // - Using the subtractHeldMoney method
+        name.subtractHeldMoney(100);
+        System.out.println("HELD MONEY AFTER SUBTRACTION: "+name.getHeldMoney());
+
+        Account nameAccount = new Account("4", "Yingying", 500);
+
+        System.out.println(nameAccount.toString());
+
 
 
 

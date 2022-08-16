@@ -1,9 +1,9 @@
 public class AccountExt {
 
 
-        private String id;
-        private CustomerExt owner;
-        private int balance;
+        String id;
+        CustomerExt owner;
+        int balance;
 
         public AccountExt(String id, CustomerExt owner, int balance) {
             this.id = id;
@@ -16,7 +16,7 @@ public class AccountExt {
             return this.id;
         }
 
-        public Customer getName() {
+        public CustomerExt getName() {
             return this.owner;
         }
         public int getBalance() {
@@ -27,7 +27,7 @@ public class AccountExt {
         public void setId(String id){
             this.id = id;
         }
-        public void setName(Customer owner){
+        public void setName(CustomerExt owner){
             this.owner = owner;
         }
         public void setBalance(int balance){
