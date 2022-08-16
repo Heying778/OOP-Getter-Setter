@@ -1,24 +1,54 @@
 public class CustomerExt {
+    private int id;
+    private String firstName;
+    private String lastName;
 
-        int id;
-        String firstName;
-        String lastName;
-        double heldMoney;
-        double subtract;
-        double current;
+    public CustomerExt(String firstName, String lastName, double heldMoney) {
+        this.id = (int) ( Math.random( ) * 1000 + 1);
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
-        public String getFullName(){
-            return firstName + lastName;
-        }
-
-        public void subtractMoneyHeld (double heldMoney, double subtract){
-            current = heldMoney - subtract;
-        }
-
-        public void setId( int id){
-            String newID = String.valueOf(id);
-        }
-
+    //getter
+    public int getId() {
+        return id;
     }
 
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+
+    //setter
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+
+
+
+    //additional functions
+    public String getFullName() {
+        return firstName+" "+lastName;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Customer{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + '}';
+    }
+
+}
