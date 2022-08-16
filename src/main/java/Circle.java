@@ -1,19 +1,15 @@
 public class Circle {
         private double radius;
+        public Circle(double newCircleRadius) {
+            this.radius = newCircleRadius;
+        }
 
         public double getRadius(){
-            return radius;
+
+            return this.radius;
         }
 
-        double circumstance;
 
-        public Circle() {
-            radius = 0.0;
-        }
-
-        public Circle(double radius) {
-            radius = 0.0;
-        }
 
         public void setCircle(double radius){
             this.radius = radius;
@@ -23,7 +19,8 @@ public class Circle {
             this.radius = radius;
         }
         public static double getCircle(){
-            return Math.PI * radius* 2;
+            return (Math.PI * this.radius* 2);
+
         }
 
     }
