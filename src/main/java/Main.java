@@ -5,6 +5,12 @@ public class Main {
         System.out.println(rectangle.getDiagonal());
         System.out.println(rectangle.getArea());
         System.out.println(rectangle.getPerimeter());
+        System.out.println(rectangle.toString());
+
+        //Circle
+        Circle circle = new Circle(1);
+        System.out.println(circle.getCircumference());
+        System.out.println(circle.toString());
 
     }
 
